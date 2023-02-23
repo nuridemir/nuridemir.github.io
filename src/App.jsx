@@ -18,7 +18,6 @@ function App() {
         <hr />
         <section className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 p-6 md:px-0">
           <CardComponents {...repicePage} />
-          <CardComponents {...repicePage} />
           <CardComponents {...interiorConsultant} />
           <CardComponents {...buttonComponents} />
           <CardComponents {...myGallery} />
