@@ -1,15 +1,10 @@
 // Images
-import repicePageIMG from "./images/challengesDesigns_recipeBlogThumbnail.webp"
-import interiorConsultantIMG from "./images/challengesDesigns_interiorConsultantThumbnail.webp"
-import buttonComponentsIMG from "./images/challengesDesigns_ButtonThumbnail.webp"
-import myGalleryIMG from "./images/challengesDesigns_GalleryThumbnail.png"
-import notFoundIMG from "./images/challengesDesigns_404PageThumbnail.webp"
 
 export let repicePage = {
     title: "Recipe page",
     desc: "A figma file we use to practice HTML5, CSS3",
     source: "devchallenges.io",
-    img: repicePageIMG,
+    img: "https://devchallenges.io/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fdevchallenges-1234.appspot.com%2Fo%2FchallengesDesigns%252F404PageThumbnail.png%3Falt%3Dmedia%26token%3D81f7c567-c0bc-446f-a549-07eeda31c5ef&w=750&q=75",
     technology: [
         "HTML5",
         "CSS3",
@@ -17,52 +12,3 @@ export let repicePage = {
     sourceCode: "https://github.com/ndemir9/devchallenges-frontend/tree/main/05-recipe-page",
     demo: "https://ndemir9.github.io/devchallenges-frontend/05-recipe-page"
 }
-export let interiorConsultant = {
-    title: "Interior Consultant",
-    desc: "A figma file we use to practice HTML5, CSS3, JavaScript",
-    source: "devchallenges.io",
-    img: interiorConsultantIMG,
-    technology: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-    ],
-    sourceCode: "https://github.com/ndemir9/devchallenges-frontend/tree/main/04-interior-consultant",
-    demo: "https://ndemir9.github.io/devchallenges-frontend/04-interior-consultant"
-}
-export let buttonComponents = {
-    title: "Button components",
-    desc: "A figma file we use to practice React.js",
-    source: "devchallenges.io",
-    img: buttonComponentsIMG,
-    technology: [
-        "React.js",
-    ],
-    sourceCode: "https://github.com/ndemir9/button-components",
-    demo: "https://clever-croissant-7f2318.netlify.app/"
-}
-export let myGallery = {
-    title: "My Gallery",
-    desc: "A figma file we use to practice HTML5, CSS3",
-    source: "devchallenges.io",
-    img: myGalleryIMG,
-    technology: [
-        "HTML5",
-        "CSS3",
-    ],
-    sourceCode: "https://github.com/ndemir9/devchallenges-frontend/tree/main/02-my-gallery",
-    demo: "https://ndemir9.github.io/devchallenges-frontend/02-my-gallery"
-}
-export let notFound = {
-    title: "404 Not Found",
-    desc: "A figma file we use to practice HTML5, CSS3",
-    source: "devchallenges.io",
-    img: notFoundIMG,
-    technology: [
-        "HTML5",
-        "CSS3",
-    ],
-    sourceCode: "https://github.com/ndemir9/devchallenges-frontend/tree/main/01-404-not-found-master",
-    demo: "https://ndemir9.github.io/devchallenges-frontend/01-404-not-found-master"
-}
-
