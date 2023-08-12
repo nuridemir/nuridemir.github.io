@@ -21,7 +21,7 @@ const CardComponent = ({ data }) => {
                 {data.desc}
             </p>
             <p className='text-sm text-blue-300 hover:text-blue-400 duration-300'>
-                <a href={data.source} target="_blank">{data.source}</a>
+                <a href={data.source} target="_blank">Source: {data.source}</a>
             </p>
             <div className="mt-4 grid grid-cols-2 gap-2">
                 <a href={data.sourceCode}
