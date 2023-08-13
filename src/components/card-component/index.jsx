@@ -35,5 +35,4 @@ const CardComponent = ({ data }) => {
         </div>
     )
 }
-
 export default CardComponent
