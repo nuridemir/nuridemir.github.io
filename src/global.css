@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --playfair: 'Playfair Display', serif;
 }
@@ -18,6 +22,16 @@ body {
     box-shadow: #a78bfa 2px 2px;
 }
 
+.custom-container {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 .ellipsis {
     text-overflow: ellipsis;
     /* enables ellipsis */
@@ -31,7 +45,7 @@ body {
 ul[role="navigation"] {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
@@ -41,8 +55,8 @@ ul[role="navigation"] li {
     width: 36px;
     height: 36px;
 
-    border: 1px solid rgb(86, 86, 255);
-    color: rgb(86, 86, 255);
+    border: 1px solid #6366f1;
+    color: #6366f1;
     border-radius: 4px;
 }
 
@@ -56,7 +70,7 @@ ul[role="navigation"] li a {
 }
 
 ul[role="navigation"] li.selected {
-    background-color: rgb(86, 86, 255);
+    background-color: #6366f1;
     color: var(--white);
-    border: 1px solid rgb(86, 86, 255);
+    border: 1px solid #6366f1;
 }

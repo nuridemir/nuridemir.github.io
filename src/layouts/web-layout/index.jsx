@@ -3,12 +3,8 @@ import HeaderComponent from '~/components/header-component'
 
 const WebLayout = ({ children }) => {
     return (
-        <div className="bg-slate-800">
-            <div className="px-4 mx-auto py-12"
-                style={{
-                    width: "100%",
-                    maxWidth: "1024px"
-                }}>
+        <div className="bg-zinc-50 dark:bg-slate-800 w-full min-h-screen py-14">
+            <div className="custom-container">
                 <HeaderComponent />
                 <main>
                     {children}

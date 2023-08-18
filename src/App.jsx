@@ -1,15 +1,20 @@
-import HomePage from "./pages/home-page"
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./global.css"
+import { BrowserRouter } from "react-router-dom"
+
+import RouteSystem from './router'
 
 function App() {
+
   return (
-    <HomePage />
+    <>
+      <RouteSystem />
+    </>
   )
 }
 export default App
 
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><App /></BrowserRouter>)

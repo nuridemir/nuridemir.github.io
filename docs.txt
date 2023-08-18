@@ -1,4 +1,4 @@
 npm run deploy
 git add .
-git commit -m ""
+git commit -m "add react router, dark mode, update ui, add see more link, add paginate"
 git push
