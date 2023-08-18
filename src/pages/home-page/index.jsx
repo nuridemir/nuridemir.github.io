@@ -7,6 +7,7 @@ const HomePage = () => {
   return (
     <WebLayout>
       <ProjectsComponent />
+      <div className='my-20'></div>
       <PracticesComponent />
     </WebLayout>
   )
