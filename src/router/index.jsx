@@ -8,10 +8,10 @@ export default function RouteSystem() {
     return (
         <Routes>
             <Route path="/" exact element={<HomePage />} />
-            <Route path="/projects" exact element={<ProjectsPage />} />
-            <Route path="/pratices" exact element={<PraticesPage />} />
-            <Route path="/blogs" exact element={<BlogsPage />} />
-            <Route path="*" exact element={<NotFound404Page />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/pratices" element={<PraticesPage />} />
+            <Route path="/blogs" element={<BlogsPage />} />
+            <Route path="*" element={<NotFound404Page />} />
         </Routes>
     )
 }
