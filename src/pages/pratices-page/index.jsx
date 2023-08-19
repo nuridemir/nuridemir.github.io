@@ -7,7 +7,7 @@ export default function PraticesPage() {
     return (
         <WebLayout>
             <GoBackComponent />
-            <CardComponent apiUrl="/pratices.json" title="Practices" errorMessage="Pratices not found..." paginate={true} />
+            <CardComponent apiUrl="/pratices.json" title="Practices" errorMessage="Pratices not found..." paginate={true} searchInput />
         </WebLayout>
     )
 }

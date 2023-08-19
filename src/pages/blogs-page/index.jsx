@@ -8,7 +8,7 @@ export default function BlogsPage() {
     return (
         <WebLayout>
             <GoBackComponent />
-            <CardComponent apiUrl="/blogs.json" title="Blogs" errorMessage="Blogs not found..." />
+            <CardComponent apiUrl="/blogs.json" title="Blogs" errorMessage="Blogs not found..." searchInput />
         </WebLayout>
     )
 }
