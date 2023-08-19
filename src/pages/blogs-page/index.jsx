@@ -4,11 +4,11 @@ import WebLayout from '~/layouts/web-layout'
 import CardComponent from '~/components/card-component'
 
 
-export default function ProjectsPage() {
+export default function BlogsPage() {
     return (
         <WebLayout>
             <GoBackComponent />
-            <CardComponent apiUrl="/projects.json" title="Projects" errorMessage="Projects not found..." />
+            <CardComponent apiUrl="/blogs.json" title="Blogs" errorMessage="Blogs not found..." />
         </WebLayout>
     )
 }

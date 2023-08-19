@@ -1,14 +1,15 @@
 import React from 'react'
 import WebLayout from '~/layouts/web-layout'
-import ProjectsComponent from '../../components/projects-component'
-import PracticesComponent from '../../components/practices-component'
+import CardComponent from '~/components/card-component'
 
 const HomePage = () => {
   return (
     <WebLayout>
-      <ProjectsComponent href="/projects" />
+      <CardComponent apiUrl="/blogs.json" title="Blogs" errorMessage="Blogs not found..." href="/blogs" />
       <div className='my-20'></div>
-      <PracticesComponent href="/pratices"  listItemCount="3" />
+      <CardComponent apiUrl="/projects.json" title="Projects" errorMessage="Projects not found..." href="/projects" />
+      <div className='my-20'></div>
+      <CardComponent apiUrl="/pratices.json" title="Practices" errorMessage="Pratices not found..." href="/pratices" listItemCount="3" />
     </WebLayout>
   )
 }

@@ -1,13 +1,13 @@
 import React from 'react'
+import CardComponent from '~/components/card-component';
 import GoBackComponent from '~/components/goback-component';
 import WebLayout from '~/layouts/web-layout'
-import PracticesComponent from '~/components/practices-component';
 
 export default function PraticesPage() {
     return (
         <WebLayout>
             <GoBackComponent />
-            <PracticesComponent paginate={true} />
+            <CardComponent apiUrl="/pratices.json" title="Practices" errorMessage="Pratices not found..." paginate={true} />
         </WebLayout>
     )
 }

@@ -92,19 +92,19 @@ export default function CardComponent(props) {
             </>
         )
     }
-    // listItemCount
+
     return (
         <div className=''>
             {
                 !data ? props.errorMessage : (
                     <div className='rounded-lg'>
-                        {!props.href ? <h2 className="text-slate-800 dark:text-slate-400 text-4xl font-bold underline-offset-8 font-playfair">{props.title}</h2> : (
+                        {!props.href ? <h2 className=" text-slate-800 dark:text-slate-400 text-4xl font-bold underline-offset-8 font-playfair">{props.title}</h2> : (
                             <div className='flex items-center justify-between'>
-                                <h2 className="text-slate-800 dark:text-slate-400 text-4xl font-bold underline-offset-8 font-playfair">{props.title}</h2>
-                                <NavLink to={props.href} className='flex tracking-widest items-center gap-2 dark:text-blue-400 text-blue-700 font-semibold'>see more <BsArrowRight /></NavLink>
+                                <h2 className=" text-slate-800 dark:text-slate-400 text-4xl font-bold underline-offset-8 font-playfair">{props.title}</h2>
+                                <NavLink to={props.href} className='flex tracking-widest items-center gap-2 dark:text-blue-400 dark:hover:text-blue-500 text-blue-700 hover:text-blue-400 duration-200 font-semibold text-xl'>see more <BsArrowRight /></NavLink>
                             </div>
                         )}
-                        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:px-0">
+                        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:px-0 mt-8">
                             {
                                 props.listItemCount ? (
                                     <>
