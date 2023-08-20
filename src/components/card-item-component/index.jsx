@@ -22,11 +22,9 @@ const CardItemComponent = ({ data }) => {
                     }
                 </div>
                 <p className="mt-2 text-2xl font-semibold text-slate-800 dark:text-white">{data?.title}</p>
-                <p className="py-2 text-slate-600 dark:text-slate-300 text-[15px]">
-                    {data?.desc}
-                </p>
+                <p className="py-2 text-slate-600 dark:text-slate-300 text-[15px] card-item-desc ellipsis-3" dangerouslySetInnerHTML={{ __html: data?.desc }} />
                 {data?.source && (
-                    <p className='text-sm  ellipsis text-slate-600 dark:text-slate-300'>
+                    <p className='text-sm  ellipsis text-slate-600 dark:text-slate-300 mt-2'>
                         Source: <a href={data?.source} target="_blank" className='text-indigo-500 hover:text-indigo-700 dark:text-indigo-300 dark:hover:text-indigo-400 duration-300'>{data?.source}</a>
                     </p>
                 )}
