@@ -9,6 +9,5 @@ export default defineConfig({
     alias: {
       '~': path.resolve(__dirname, 'src'),
     },
-  },
-  base: '/ndemir9-github-io/'
+  }
 })
