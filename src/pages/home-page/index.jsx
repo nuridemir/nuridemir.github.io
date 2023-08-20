@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className='my-20'></div>
       <CardComponent apiUrl="/projects.json" title="Projects" errorMessage="Projects not found..." href="/projects" />
       <div className='my-20'></div>
-      <CardComponent apiUrl="/pratices.json" title="Practices" errorMessage="Pratices not found..." href="/pratices" listItemCount="3" />
+      <CardComponent apiUrl="/pratices.json" title="Practices" errorMessage="Pratices not found..." href="/pratices" />
     </WebLayout>
   )
 }

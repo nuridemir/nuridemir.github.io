@@ -1,14 +1,14 @@
 import React from 'react'
 import GoBackComponent from '~/components/goback-component'
 import WebLayout from '~/layouts/web-layout'
-import CardComponent from '~/components/card-component'
+import PaginateCardComponent from '~/components/paginate-card-component'
 
 
 export default function ProjectsPage() {
     return (
         <WebLayout>
             <GoBackComponent />
-            <CardComponent apiUrl="/projects.json" title="Projects" errorMessage="Projects not found..." />
+            <PaginateCardComponent apiUrl="/projects.json" title="Projects" errorMessage="Projects not found..." searchInput searchPlaceholder="Search project..." />
         </WebLayout>
     )
 }
