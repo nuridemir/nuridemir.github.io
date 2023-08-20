@@ -93,11 +93,11 @@ export default function PaginateCardComponent(props) {
                 <Items currentItems={searchResults.length < 0 ? searchResults : currentItems} />
                 <ReactPaginate
                     breakLabel="..."
-                    nextLabel=">"
+                    nextLabel="Next"
                     onPageChange={handlePageClick}
-                    pageRangeDisplayed={1}
+                    pageRangeDisplayed={4}
                     pageCount={pageCount}
-                    previousLabel="<"
+                    previousLabel="Previous"
                     renderOnZeroPageCount={null}
                 />
             </>
