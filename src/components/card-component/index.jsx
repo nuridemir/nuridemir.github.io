@@ -33,13 +33,14 @@ export default function CardComponent(props) {
     const [searchResults, setSearchResults] = useState([]);
     const handleSearch = (e) => {
         e.preventDefault();
-        const searchTerm = e.target.value;
+        let searchTerm = e.target.value;
         setSearchTerm(searchTerm);
         const filteredResults = data?.filter((item) =>
             item.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setSearchResults(filteredResults);
     };
+
     // **Seacrh input
 
 

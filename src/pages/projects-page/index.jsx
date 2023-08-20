@@ -8,7 +8,7 @@ export default function ProjectsPage() {
     return (
         <WebLayout>
             <GoBackComponent />
-            <CardComponent apiUrl="/projects.json" title="Projects" errorMessage="Projects not found..." searchInput />
+            <CardComponent apiUrl="/projects.json" title="Projects" errorMessage="Projects not found..." />
         </WebLayout>
     )
 }

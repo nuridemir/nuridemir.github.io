@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { AiOutlineDesktop } from 'react-icons/ai';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
+import { MdOutlineDesktopMac } from 'react-icons/md';
 
 export default function ToggleThemeComponent() {
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "system");
@@ -45,15 +45,15 @@ export default function ToggleThemeComponent() {
             text: "dark",
         },
         {
-            icon: <AiOutlineDesktop />,
+            icon: <MdOutlineDesktopMac />,
             text: "system",
         }
     ]
 
     return (
-        <div className='flex items-center gap-4 text-xl'>        {
+        <div className='flex items-center gap-4 text-xl text-gray-600 dark:text-gray-200'>{
             themeIcon.map((item) => (
-                <button onClick={() => setTheme(item.text)} key={item.text} className={`${theme == item.text && "text-blue-500 dark:text-indigo-500"}`}>{item.icon}</button>
+                <button onClick={() => setTheme(item.text)} key={item.text} className={`${theme === item.text && "text-blue-500"}`}>{item.icon}</button>
             ))
         }</div>
     )
