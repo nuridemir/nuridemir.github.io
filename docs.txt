@@ -1,4 +1,4 @@
 npm run deploy
 git add .
-git commit -m "add seacrh bar & deploy"
+git commit -m "deploy"
 git push
