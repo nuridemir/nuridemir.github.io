@@ -45,7 +45,7 @@ export default function CardComponent(props) {
                 )}
 
                 {
-                    !isLoading ? <CardsLoadingComponent /> : (
+                    isLoading ? <CardsLoadingComponent /> : (
                         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:px-0 mt-8">
                             {data?.slice(0, propsListItemCount).map((item, index) => (
                                 <CardItemComponent key={index} data={item} />
