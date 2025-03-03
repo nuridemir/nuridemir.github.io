@@ -6,17 +6,17 @@ export default function SocialsComponent() {
     const socials = [
         {
             title: "github",
-            href: "https://github.com/ndemir9",
+            href: "https://github.com/nuridemir",
             icon: <AiOutlineGithub />
         },
         {
             title: "linkledin",
-            href: "https://www.linkedin.com/in/ndemir9/",
+            href: "https://www.linkedin.com/in/nuridemir34/",
             icon: <AiFillLinkedin />
         },
         {
             title: "website",
-            href: "https://github.com/ndemir9",
+            href: "mailto:ndemir9@hotmail.com",
             icon: <AiOutlineLink />
         }
     ]
