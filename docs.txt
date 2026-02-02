@@ -1,4 +1,0 @@
-npm run deploy
-git add .
-git commit -m "deploy"
-git push
